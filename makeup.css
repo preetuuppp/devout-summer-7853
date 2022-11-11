@@ -28,7 +28,10 @@ input {
     color: white;
     border-color: white;
     width: 80px;
+    border: 0px solid firebrick;
     height: 25px;
+    margin-left: 15px;
+    border-radius: 5px;
 }
 
 #selector {
@@ -38,6 +41,12 @@ input {
     height: 30px;
     width: 300px;
     border-color: rgb(123, 103, 103);
+    border: 1px solid black;
+    width: 90%;
+    /* margin: auto; */
+    margin-left: 35px;
+    border-radius: 5px;
+
 }
 
 #container>div {
@@ -98,38 +107,37 @@ input {
 
 
 
+.reg {
+    margin-top: 20px;
+    border: 0px solid blueviolet;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
 .reg>a {
     background-color: rgb(239, 17, 165);
     color: white;
     text-decoration: none;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     border-radius: 5px;
     border: none;
-
+    border: 0px solid blue;
     width: 80px;
-    height: 50px;
-}
-
-.reg {
-    margin-top: 20px;
-    background-color: rgb(239, 17, 165);
-    color: white;
-    border-color: white;
-    width: 80px;
-    height: 25px;
-
+    height: 30px;
+    padding: 5px;
+    margin-left: 10px;
 }
 
 #navbar {
     height: 20px;
-    width: auto;
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
     /* border: 1px solid black; */
     margin: auto;
     background-color: rgb(239, 17, 165);
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    padding: 0px, 10px;
+    margin-top: 10px;
 
 
 
@@ -164,14 +172,14 @@ a {
     display: flex;
     /* width: 100%; */
     margin: auto;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 20px;
     height: 30PX;
+    border: 0px solid green;
 
 
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     margin: 0;
-
 
 }
 
@@ -183,4 +191,14 @@ a {
     background-color: white;
     color: rgb(239, 17, 165);
     margin-top: 20px;
+}
+
+.right>a {
+    padding-right: 10px;
+    text-decoration: none;
+}
+
+.left>a {
+    padding-left: 8px;
+    text-decoration: none;
 }
