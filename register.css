@@ -200,20 +200,5 @@ form {
 
 }
 
-input {
-    transition: all;
-}
 
-input:hover {
-    z-index: 3px;
-    transform: scale(1.1);
-}
-
-#main>a {
-    text-align: center;
-    color: rgb(165, 152, 152);
-    margin-left: 150px;
-    width: 30%;
-    background-color: rgb(91, 96, 96);
-    font-size: 15px;
 }
