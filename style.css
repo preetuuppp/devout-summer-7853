@@ -4,7 +4,7 @@
 }
 
 
-#nav>img {
+#nav>#wid {
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -20,6 +20,8 @@
     background-color: rgb(239, 17, 165);
     color: white;
     border-color: white;
+    width: 80px;
+    height: 25px;
 }
 
 .container {
@@ -32,6 +34,13 @@
 
 }
 
+button:hover {
+    cursor: pointer;
+    background-color: rgb(115, 158, 196);
+    transform: scale(1.1);
+    z-index: 5px;
+}
+
 .container>#color {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -39,6 +48,19 @@
     width: 80%;
     height: 30px;
     margin: auto;
+
+
+}
+
+#color>div {
+    /* border: 1px solid red; */
+    margin-bottom: 50px;
+    transition: all .5s
+}
+
+#color>div:hover {
+    transform: scale(1.1);
+    z-index: 5px;
 }
 
 #color>div>img {
@@ -51,20 +73,37 @@ button {
     font-size: 10px;
 }
 
+#color>div>button {
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+
+    width: 80px;
+    height: 30px;
+}
+
+h3 {
+    margin-left: 80px;
+}
+
 #color>div {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     text-align: center;
+    border-radius: 5px;
 }
 
 .container>.bottom>img {
     height: 100px;
-    ;
+    /* border: 1px solid red; */
+    margin-top: 15px;
     width: 100%;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .container>p {
     font-size: 10px;
+    background-color: rgb(211, 186, 186);
+    position: sticky;
 }
 
 #footer {
@@ -78,19 +117,20 @@ button {
     display: flex;
     /* width: 100%; */
     margin: auto;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 20px;
     height: 30PX;
-    text-align: center;
-    align-content: center;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
+
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin: 0;
 
 
 }
 
 #footer>div>p {
     font-size: 10px;
+
 }
 
 #footer>div>ul {
@@ -102,11 +142,23 @@ button {
     text-shadow: 10px;
     background-color: white;
     color: rgb(239, 17, 165);
+    margin-top: 20px;
+}
+
+.reg {
+    margin-top: 20px;
 }
 
 .reg>a {
     background-color: rgb(239, 17, 165);
     color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+
+    width: 80px;
+    height: 50px;
 }
 
 input {
@@ -124,7 +176,7 @@ input {
     height: 20px;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     /* border: 1px solid black; */
     margin: auto;
     background-color: rgb(239, 17, 165);
@@ -136,23 +188,27 @@ input {
 #nav {
     height: 30px;
     /* border: 1px solid red; */
-    margin-top: 5px;
-    margin-block-end: 10px;
+    /* margin-top: 5px; */
+    /* margin-block-end: 10px;*/
 }
 
 a {
     color: white;
     text-transform: uppercase;
-    font-size: 10px;
+    font-size: 9px;
     margin-top: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.right {
+
+.right>a {
     padding-right: 10px;
+    text-decoration: none;
 }
 
-.left {
+.left>a {
     padding-left: 8px;
+    text-decoration: none;
 }
 
 #mid>img {
