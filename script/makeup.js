@@ -168,9 +168,11 @@ let data = [
     },
 
 ]
+
 function displayCard(data) {
+
     document.querySelector("#container").innerHTML = ""
-    data.forEach(function (element) {
+    data.forEach(function (element, index) {
         let div = document.createElement("div");
         let name = document.createElement("p")
         name.innerText = element.title;
@@ -189,7 +191,10 @@ function displayCard(data) {
         add.addEventListener("click", function () {
             addData("cart", element)
             alert("product added in cartData..!")
+
         })
+
+
 
         div.append(img, name, price, rate, Category, add);
         document.querySelector("#container").append(div)
@@ -198,6 +203,7 @@ function displayCard(data) {
     });
 }
 displayCard(data)
+
 
 function handle() {
     let selected = document.querySelector("#selector").value
@@ -220,5 +226,18 @@ function addData(key, value) {
 
     localStorage.setItem(key, JSON.stringify(newData))
 }
+
+
+function ppp() {
+    let p = document.querySelector("input").value
+    let newData = data.filter(function (ele) {
+        return ele.title.toLowerCase().includes(p.toLocaleLowerCase());
+
+
+    });
+    displayCard(newData)
+
+}
+
 
 
