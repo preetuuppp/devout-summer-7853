@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SigninPage</title>
+    <link rel="stylesheet" href="signin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <div id="head">
+        <img src="https://www.beautybebo.com/pub/media/ads/ad-mobile.jpg" alt="er">
+    </div>
+    <div id="nav">
+        <img id="wid" src="beauty Beasts (1).jpg" alt="">
+        <h3 id="text"><i>BEAUTYBEASTS</i></h3>
+        <div class="input">
+            <input type="text" placeholder="Serch by name">
+            <button title="search">search</button>
+        </div>
+        <div class="reg">
+            <a href="./register.html"><i class="fa fa-hand-o-up" style="font-size:18px"></i>Register</a>
+            <a href="./signin.html">Sign In</a>
+        </div>
+
+
+
+    </div>
+
+    <div id="navbar">
+
+        <div class="left">
+            <a href="./index.html">Home</a>
+            <a href="./makeUp.html">MakeUp</a>
+            <a href="./skin.html">Skin</a>
+            <a href="./hair.html">Hair</a>
+            <a href="./personal.html">Personal Care</a>
+            <a href="./mom.html">Mom & Baby Care</a>
+            <a href="./fragrence.html">Fragrance</a>
+            <a href="./ayurveda.html">Ayurveda</a>
+            <a href="./brands.html">Brands</a>
+        </div>
+        <div class="right">
+            <a href="./cart.html">My Cart</a>
+        </div>
+
+
+
+    </div>
+
+
+    <form>
+
+
+        <input id="email" type="email" placeholder="Email">
+        <br>
+        <input id="password" type="password" placeholder="Create a Password">
+        <br>
+        <input id="signIn" type="button" value="SignIn">
+    </form>
+</body>
+
+</html>
+<script>
+    let SignUpData = JSON.parse(localStorage.getItem("signedUp")) || [];
+
+    document.querySelector("#signIn").addEventListener("click", mysignIn);
+    function mysignIn() {
+
+        let newEmail = document.querySelector("#email").value;
+        let newpassword = document.querySelector("#password").value;
+
+        if (newEmail === "" || newpassword === "") {
+            alert("please fill the details for signing in")
+        }
+        else {
+            let flag = false;
+            SignUpData.forEach(function (element) {
+                if (
+
+                    newEmail == element.email &&
+                    newpassword == element.password
+                ) {
+                    flag = true;
+
+                }
+            });
+            if (flag == true) {
+                alert("Successfully SignIn");
+                window.location.href = "index.html"
+
+            } else {
+                alert("Please fill the correct details");
+                window.location.href = "signin.html"
+
+
+            }
+        }
+    }
+
+</script>

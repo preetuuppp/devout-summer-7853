@@ -6,14 +6,15 @@ function myfun() {
     let last = document.querySelector("#last").value;
     let email = document.querySelector("#email").value;
     let mob = document.querySelector("#mobile").value;
-    let pass = document.querySelector("#password").value;
-    if (first == "" || last == "" || email == "" || mob == "" || pass == "") {
+    let password = document.querySelector("#password").value;
+    if (first == "" || last == "" || email == "" || mob == "" || password == "") {
         alert("Please Fill the all Details")
     } else {
-        let obj = { first, last, mob, email, pass }
+        let obj = { first, last, mob, email, password }
         SignUpData.push(obj)
         localStorage.setItem("signedUp", JSON.stringify(SignUpData));
-        alert("Succesfully Registered..! Please click on the Sign in")
+        alert("Succesfully Registered..!")
+        window.location.href = "signin.html"
     }
 
 

@@ -1,42 +1,42 @@
 let data = [
     {
-        "title": "The Body Shop All-In-One Bb Cream",
-        "avatar": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/t/h/th1.jpg",
-        "price": 234,
+        "title": "Faces Canada Hydro Cleanser",
+        "avatar": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/e/f/ef93c248903380157734__1_.jpg",
+        "price": 734,
         "rating": 4.2,
-        "category": "BB Cream",
+        "category": "Cleanser",
 
     },
     {
-        "title": "L'oreal Paris True Match Bb Cream Spf 35 Pa+++ - Silver/Gold",
-        "avatar": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/l/o/lo17.jpg",
-        "price": 88,
-        "rating": 3.7,
-        "category": "BB Cream",
+        "title": "O3+ Blueberry Dtan Creme Mask",
+        "avatar": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/5/1/51e_koru3bs._sl1500_.jpg",
+        "price": 880,
+        "rating": 4.7,
+        "category": "Moisturising ",
 
     },
     {
-        "title": "Colorbar Perfect Match Bb Cream Spf 20",
-        "avatar": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/c/o/co.jpg",
-        "price": 68,
+        "title": "Miss Claire Prestige Anti Dust ",
+        "avatar": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/1/a/1a89f778903487036925_1.jpg",
+        "price": 680,
         "rating": 4.8,
-        "category": "BB Cream",
+        "category": "Cleansing",
 
     },
     {
-        "title": "Olay Total Effects 7 In One Touch Of Foundation Bb Cream Day Spf 15",
-        "avatar": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/9/2/92_1_2.jpg",
-        "price": 120,
+        "title": " Derma Cult Retinol Cream",
+        "avatar": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/e/c/ec35271o3-0953_7_.jpg",
+        "price": 520,
         "rating": 4.6,
-        "category": "BB Cream",
+        "category": "Moisturising ",
 
     },
     {
-        "title": "Miss Claire Eyeshadow & Blusher Kit - 377-15-2",
-        "avatar": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/u/n/untitled-1_10_2.jpg",
-        "price": 94,
+        "title": "Faces Canada Urban ",
+        "avatar": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/2/4/24706218903380002539_new_0.jpg",
+        "price": 940,
         "rating": 4.2,
-        "category": "Blush",
+        "category": "Cleanser",
 
     },
     {
@@ -108,7 +108,7 @@ let data = [
         "avatar": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/u/n/untitled-142_1.jpg",
         "price": 250,
         "rating": 4,
-        "category": "Bronzer",
+        "category": "Moisturising ",
 
     },
     {
@@ -116,7 +116,7 @@ let data = [
         "avatar": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/8/6/86.jpg",
         "price": 600,
         "rating": 4.2,
-        "category": "Contour",
+        "category": "Moisturising ",
 
     },
     {
@@ -139,7 +139,7 @@ let data = [
         "avatar": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/9/3/938ec248903380001310_1.jpg",
         "price": 350,
         "rating": 4.5,
-        "category": "Consealer",
+        "category": "Cleanser",
 
     },
     {
@@ -155,7 +155,7 @@ let data = [
         "avatar": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/4/1/41tfhgyltzl._sl1000__1_.jpg",
         "price": 350,
         "rating": 4.3,
-        "category": "Consealer",
+        "category": "Cleanser",
 
     },
     {
@@ -168,11 +168,9 @@ let data = [
     },
 
 ]
-
 function displayCard(data) {
-
     document.querySelector("#container").innerHTML = ""
-    data.forEach(function (element, index) {
+    data.forEach(function (element) {
         let div = document.createElement("div");
         let name = document.createElement("p")
         name.innerText = element.title;
@@ -192,9 +190,8 @@ function displayCard(data) {
             addData("cart", element)
             alert("product added in cartData..!")
 
+
         })
-
-
 
         div.append(img, name, price, rate, Category, add);
         document.querySelector("#container").append(div)
@@ -227,7 +224,6 @@ function addData(key, value) {
     localStorage.setItem(key, JSON.stringify(newData))
 }
 
-
 function ppp() {
     let p = document.querySelector("input").value
     let newData = data.filter(function (ele) {
@@ -238,6 +234,5 @@ function ppp() {
     displayCard(newData)
 
 }
-
 
 

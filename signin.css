@@ -34,20 +34,7 @@ input {
     border-radius: 5px;
 }
 
-#selector {
-    /* padding-left: 50px;
-    margin-left: 20px; */
-    margin-top: 20px;
-    height: 30px;
-    width: 300px;
-    border-color: rgb(123, 103, 103);
-    border: 1px solid black;
-    width: 90%;
-    /* margin: auto; */
-    margin-left: 35px;
-    border-radius: 5px;
 
-}
 
 #container>div {
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
@@ -184,13 +171,50 @@ a {
 }
 
 
-
 #nav>#text {
     font-size: 20px;
     text-shadow: 10px;
     background-color: white;
     color: rgb(239, 17, 165);
     margin-top: 20px;
+}
+
+
+h1,
+h3 {
+    text-align: center;
+}
+
+form {
+    margin: auto;
+    width: 30%;
+    margin-top: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    text-align: center;
+
+
+}
+
+form>input {
+    transition: all .5s;
+}
+
+form>input:hover {
+    transform: scale(1.1);
+    z-index: 5px;
+}
+
+#main>div {
+    background-color: rgb(41, 41, 155);
+    /* padding-left: 30px; */
+    font-size: 15px;
+    display: flex;
+    width: 30%;
+    justify-content: space-around;
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+
 }
 
 .right>a {
