@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 #container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -11,14 +16,25 @@
 
 }
 
-#selector {
-    /* padding-left: 50px;
-    margin-left: 20px; */
+input {
+    height: 20px;
+    align-items: center;
     margin-top: 20px;
-    height: 30px;
-    width: 300px;
-    border-color: rgb(123, 103, 103);
+    text-align: center;
 }
+
+.input>button {
+    background-color: rgb(239, 17, 165);
+    color: white;
+    border-color: white;
+    width: 80px;
+    border: 0px solid firebrick;
+    height: 25px;
+    margin-left: 15px;
+    border-radius: 5px;
+}
+
+
 
 #container>div {
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
@@ -57,7 +73,7 @@ button {
 
 button:hover {
     cursor: pointer;
-    background-color: aliceblue;
+    background-color: rgb(115, 158, 196);
     transform: scale(1.1);
     z-index: 5px;
 }
@@ -69,22 +85,46 @@ button:hover {
     margin-left: 50px;
 }
 
+input {
+    height: 20px;
+    align-items: center;
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+
+.reg {
+    margin-top: 20px;
+    border: 0px solid blueviolet;
+    height: 50px;
+    margin-bottom: 10px;
+}
 
 .reg>a {
     background-color: rgb(239, 17, 165);
     color: white;
+    text-decoration: none;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    border: 0px solid blue;
+    width: 80px;
+    height: 30px;
+    padding: 5px;
+    margin-left: 10px;
 }
 
 #navbar {
     height: 20px;
-    width: auto;
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
     /* border: 1px solid black; */
     margin: auto;
     background-color: rgb(239, 17, 165);
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    padding: 0px, 10px;
+    margin-top: 10px;
 
 
 
@@ -106,12 +146,14 @@ a {
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
-#nav>img {
+#nav>#wid {
     width: 50px;
     height: 50px;
     border-radius: 50%;
 
+
 }
+
 
 #nav {
     display: flex;
@@ -120,15 +162,79 @@ a {
     justify-content: space-around;
     padding: 20px;
     height: 30PX;
-    text-align: center;
-    align-content: center;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border: 0px solid green;
 
+
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin: 0;
+
+}
+
+
+#nav>#text {
+    font-size: 20px;
+    text-shadow: 10px;
+    background-color: white;
+    color: rgb(239, 17, 165);
+    margin-top: 20px;
+}
+
+
+h1,
+h3 {
+    text-align: center;
+}
+
+form {
+    margin: auto;
+    width: 30%;
+    height: 250px;
+    margin-top: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    text-align: center;
+    /* border: 1px solid red; */
 
 
 }
 
-#nav>#text {
-    color: rgb(239, 17, 165);
-    margin-top: 5px;
+form>#button {
+    height: 30px;
+    width: 80px;
+    padding: 5px;
+    background-color: rgb(118, 222, 33);
+    border-radius: 10px;
+    border: 1px solid white;
+}
+
+form>input {
+    transition: all .5s;
+}
+
+form>input:hover {
+    transform: scale(1.1);
+    z-index: 5px;
+    cursor: pointer;
+}
+
+#main>div {
+    background-color: rgb(41, 41, 155);
+    /* padding-left: 30px; */
+    font-size: 15px;
+    display: flex;
+    width: 30%;
+    justify-content: space-around;
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+.right>a {
+    padding-right: 10px;
+    text-decoration: none;
+}
+
+.left>a {
+    padding-left: 8px;
+    text-decoration: none;
 }
