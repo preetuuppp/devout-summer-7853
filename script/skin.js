@@ -168,6 +168,8 @@ let data = [
     },
 
 ]
+let count = 0;
+
 function displayCard(data) {
     document.querySelector("#container").innerHTML = ""
     data.forEach(function (element) {
@@ -189,6 +191,9 @@ function displayCard(data) {
         add.addEventListener("click", function () {
             addData("cart", element)
             alert("product added in cartData..!")
+            count++
+            document.getElementById("cartCount").innerText = count;
+            localStorage.setItem("cartCountData", count)
 
 
         })
@@ -199,6 +204,9 @@ function displayCard(data) {
 
     });
 }
+
+let mainCount = JSON.parse(localStorage.getItem("cartCountData")) || [];
+document.getElementById("cartCount").innerText = mainCount;
 displayCard(data)
 
 
@@ -235,4 +243,15 @@ function ppp() {
 
 }
 
+
+function hand() {
+    let selecting = document.querySelector("#sorting").value;
+    if (selecting === "HTL") {
+        data.sort((a, b) => b.price - a.price);
+    } if (selecting === "LTH") {
+        data.sort((a, b) => a.price - b.price);
+    }
+    console.log(data)
+    displayCard(data)
+}
 
