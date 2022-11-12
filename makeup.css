@@ -202,3 +202,18 @@ a {
     padding-left: 8px;
     text-decoration: none;
 }
+
+.main {
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+
+#sorting {
+    margin-left: 150px;
+    width: 60%;
+    text-align: center;
+    margin-top: 10px;
+
+    padding: 8px;
+}
