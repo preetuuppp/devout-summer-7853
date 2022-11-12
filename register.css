@@ -7,9 +7,12 @@
 
 /* container */
 
-/* #top {
-    border: 5px solid black;
-} */
+#top {
+    /* border: 5px solid black; */
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
 
 #container {
     display: grid;
@@ -113,7 +116,7 @@ input {
     color: white;
     border-color: white;
     width: 80px;
-    /* border: 0px solid firebrick; */
+    /* border: 3px solid firebrick; */
     height: 25px;
     margin-left: 15px;
     border-radius: 5px;
@@ -211,6 +214,7 @@ h3 {
 
 form {
     margin: auto;
+    height: 330px;
     width: 30%;
     margin-top: 10px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -218,6 +222,21 @@ form {
     /* border: 2px solid hotpink; */
 
 
+}
+
+p {
+    font-size: 8px;
+    margin-top: 10px;
+}
+
+#signup {
+    background-color: rgb(50, 50, 162);
+    color: aliceblue;
+    height: 30px;
+    width: 100px;
+    padding: 5px;
+    border-radius: 10px;
+    border-color: white;
 }
 
 form>input {
@@ -228,6 +247,7 @@ form>input {
 form>input:hover {
     transform: scale(1.1);
     z-index: 5px;
+    cursor: pointer;
 }
 
 #main>div {
