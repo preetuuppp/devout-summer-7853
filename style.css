@@ -21,7 +21,10 @@
     color: white;
     border-color: white;
     width: 80px;
+    border: 0px solid firebrick;
     height: 25px;
+    margin-left: 15px;
+    border-radius: 5px;
 }
 
 .container {
@@ -44,10 +47,12 @@ button:hover {
 .container>#color {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 5px;
+    grid-gap: 20px;
     width: 80%;
-    height: 30px;
+    height: auto;
     margin: auto;
+    border: 0px solid red;
+    margin-top: 20px;
 
 
 }
@@ -86,18 +91,22 @@ h3 {
     margin-left: 80px;
 }
 
+
+
 #color>div {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     text-align: center;
     border-radius: 5px;
+
 }
 
 .container>.bottom>img {
-    height: 100px;
+    height: 200px;
     /* border: 1px solid red; */
-    margin-top: 15px;
+    /* margin-top: 5px; */
     width: 100%;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    /* border: 1px solid red; */
 }
 
 .container>p {
@@ -109,7 +118,7 @@ h3 {
 #footer {
     display: flex;
     justify-content: space-evenly;
-    background-color: rgb(44, 31, 31);
+    background-color: rgb(132, 28, 73);
     color: white;
 }
 
@@ -117,9 +126,10 @@ h3 {
     display: flex;
     /* width: 100%; */
     margin: auto;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 20px;
     height: 30PX;
+    border: 0px solid green;
 
 
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -143,22 +153,28 @@ h3 {
     background-color: white;
     color: rgb(239, 17, 165);
     margin-top: 20px;
+    border: 0px solid yellow;
 }
 
 .reg {
     margin-top: 20px;
+    border: 0px solid blueviolet;
+    height: 50px;
+    margin-bottom: 10px;
 }
 
 .reg>a {
     background-color: rgb(239, 17, 165);
     color: white;
     text-decoration: none;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     border-radius: 5px;
     border: none;
-
+    border: 0px solid blue;
     width: 80px;
-    height: 50px;
+    height: 30px;
+    padding: 5px;
+    margin-left: 10px;
 }
 
 input {
@@ -181,8 +197,15 @@ input {
     margin: auto;
     background-color: rgb(239, 17, 165);
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin-top: 10px;
 
 
+}
+
+.main {
+    position: sticky;
+    top: 0;
+    background-color: white;
 }
 
 #nav {
