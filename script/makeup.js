@@ -169,6 +169,11 @@ let data = [
 
 ]
 
+let count = 0;
+// let bag = []
+// bag = [...data]
+
+
 function displayCard(data) {
 
     document.querySelector("#container").innerHTML = ""
@@ -191,9 +196,15 @@ function displayCard(data) {
         add.addEventListener("click", function () {
             addData("cart", element)
             alert("product added in cartData..!")
+            // window.location.href = "cart.html"
+            count++
+            document.getElementById("cartCount").innerText = count;
+            localStorage.setItem("cartCountData", count)
+            // window.location.href = "cart.html";
+            // localStorage.getItem("cartCountData")
+
 
         })
-
 
 
         div.append(img, name, price, rate, Category, add);
@@ -202,7 +213,11 @@ function displayCard(data) {
 
     });
 }
+// document.getElementById("cartCount").innerText = count;
+let mainCount = JSON.parse(localStorage.getItem("cartCountData")) || [];
+document.getElementById("cartCount").innerText = mainCount;
 displayCard(data)
+
 
 
 function handle() {
@@ -240,4 +255,13 @@ function ppp() {
 }
 
 
+function hand() {
+    let selecting = document.querySelector("#sorting").value;
+    if (selecting === "HTL") {
+        data.sort((a, b) => b.price - a.price);
+    } if (selecting === "LTH") {
+        data.sort((a, b) => a.price - b.price);
+    }
 
+    displayCard(data)
+}

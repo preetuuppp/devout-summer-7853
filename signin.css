@@ -16,6 +16,12 @@
 
 }
 
+.main {
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+
 input {
     height: 20px;
     align-items: center;
@@ -159,11 +165,13 @@ a {
     display: flex;
     /* width: 100%; */
     margin: auto;
+    /* grid-template-columns: repeat(6, 1fr); */
+    gap: 30px;
     justify-content: space-around;
     padding: 20px;
     height: 30PX;
     border: 0px solid green;
-
+    /* border: 2px solid hotpink; */
 
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     margin: 0;
@@ -177,20 +185,26 @@ a {
     background-color: white;
     color: rgb(239, 17, 165);
     margin-top: 20px;
+    /* border: 2px solid hotpink; */
+    height: fit-content;
 }
 
 
-h1,
+/* h1,
 h3 {
     text-align: center;
-}
+    border: 1px solid gold;
+    height: fit-content;
+} */
 
 form {
     margin: auto;
+    height: 150px;
     width: 30%;
     margin-top: 10px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     text-align: center;
+    /* border: 2px solid hotpink; */
 
 
 }
@@ -202,6 +216,7 @@ form>input {
 form>input:hover {
     transform: scale(1.1);
     z-index: 5px;
+    cursor: pointer;
 }
 
 #main>div {
@@ -225,4 +240,15 @@ form>input:hover {
 .left>a {
     padding-left: 8px;
     text-decoration: none;
+}
+
+#signIn {
+    background-color: rgb(50, 50, 162);
+    color: aliceblue;
+    height: 30px;
+    width: 100px;
+    padding: 5px;
+    border-radius: 10px;
+    border-color: white;
+
 }

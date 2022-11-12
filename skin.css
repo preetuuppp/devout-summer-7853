@@ -202,3 +202,12 @@ a {
     padding-left: 8px;
     text-decoration: none;
 }
+
+#sorting {
+    margin-left: 150px;
+    width: 60%;
+    text-align: center;
+    margin-top: 10px;
+
+    padding: 8px;
+}
