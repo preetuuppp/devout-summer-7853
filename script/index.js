@@ -25,7 +25,7 @@ let data = [
     },
 
 ]
-let count = 0;
+// let count = 0;
 
 function displayCard(data) {
     document.querySelector("#color").innerHTML = ""
@@ -48,9 +48,9 @@ function displayCard(data) {
         add.addEventListener("click", function () {
             addData("cart", element)
             alert("product added in Cart")
-            count++
-            document.getElementById("cartCount").innerText = count;
-            localStorage.setItem("cartCountData", count)
+            // count++
+            // document.getElementById("cartCount").innerText = count;
+            // localStorage.setItem("cartCountData", count)
 
         })
 
@@ -60,8 +60,8 @@ function displayCard(data) {
 
     });
 }
-let mainCount = JSON.parse(localStorage.getItem("cartCountData")) || [];
-document.getElementById("cartCount").innerText = mainCount;
+// let mainCount = JSON.parse(localStorage.getItem("cartCountData")) || [];
+// document.getElementById("cartCount").innerText = mainCount;
 displayCard(data)
 
 function addData(key, value) {
