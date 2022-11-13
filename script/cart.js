@@ -22,7 +22,7 @@ function displayCard(data) {
         rem.innerText = "Remove";
         rem.addEventListener("click", function () {
             deleteDta(cartData, index)
-            alert("Are you sure to delete this product")
+            alert("Item removed successfully.")
             price(cartData);
         })
 
